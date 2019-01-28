@@ -1,0 +1,70 @@
+\documentclass[pra,superscriptaddress,reprint,showpacs]{revtex4-1}
+\usepackage[per-mode=symbol]{siunitx}   
+\usepackage{comment} 
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{physics}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{gensymb}
+\usepackage{enumitem}
+\usepackage{siunitx}
+\usepackage{fourier}
+\usepackage{arydshln}
+\usepackage{csvsimple}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\titleformat{\section}{\bf \center\uppercase}{\thesection}{1em}{}
+\titleformat{\subsection}{\bf \center}{\thesubsection.}{1em}{}
+\begin{document}
+\title{Homework Assignment 2}
+\date{\today}
+\author{Dillon Peterson}
+\email[send correspondence to: ]{dillonlpeterson@tamu.edu}
+\affiliation{Department of Physics and Astronomy, Texas A\&M University,
+College Station, TX. ~~77845}
+
+\pacs{23.23.+x, 56.65.Dy}
+\maketitle
+
+\section{Problem 1}
+\subsection{}
+We can relate the energy of the system with the semi-major axis $a$ using the following formula (since energy is conserved for the orbit): 
+$$E = \frac{1}{2}v^2 - \frac{1}{r} = -\frac{1}{2a}$$
+Hence, we can find $a$ with $\vb{v}$ and $\vb{r}$ as follows: 
+\begin{align}
+	a & = \frac{2}{r} - v^2
+	\intertext{Using the given vectors $\vb{v}$ and $\vb{r}$, we find that $v^2$ and $r$ are the following:}
+	v^2 & = 0^2 + \qty(\frac{1}{10})^2 = \frac{1}{100} \\
+	r & = \sqrt{10^2 + 0^2} = 10
+	\intertext{Therefore, we get the following value for the semi-major axis $a$:}
+	\therefore \Aboxed{a & = \frac{19}{100}}
+\end{align}
+To find $\mathcal{P}$, we simply find the angular momentum $\vb{L}$ and use the relation $\mathcal{P} = L^2$ to find $\mathcal{P}$ (since angular momentum is conserved, we can use the initial conditions).
+\begin{align}
+	\vb{L} & = \vb{r} \cross \vb{v} \\
+	& = \qty(r_1v_2 - v_1r_2)\vu{z} \\
+	& = \qty(10 \cdot \frac{1}{10} - 0 \cdot 0)\vu{z} \\
+	\therefore \vb{L} & = \vu{z}
+	\intertext{$\mathcal{P}$ is then:}
+	\therefore \Aboxed{\mathcal{P} & = 1}
+\end{align}
+We can then use $\mathcal{P} = L^2$ to find the eccentricity ($e$) of the orbit as follows:
+\begin{align}
+	e & = \sqrt{1 - \frac{L^2}{GMa}} \\
+	& = 
+\end{align}
+Finally, we can find the period (in reduced units) using the following $a$-dependent equation:
+\begin{align}
+	T^2 & = 4\pi^2 a^3 \\
+	\implies T & = 2\pi a^{3/2} \\
+	\therefore \Aboxed{T & = 2\pi * \qty(\frac{19}{100})^{3/2}}
+\end{align}
+
+
+
+
+\end{document}
